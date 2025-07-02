@@ -17,6 +17,8 @@ playButton.addEventListener("click", ()=>{
     if(diceRolled[0] === 6 && diceRolled[1] === 6 && diceRolled[2] === 6){
         diceRolledPrompt.style.display  = "none";
         winnerPrompt.style.display = "block";
+        let hideContainer = document.querySelector(".component-container");
+        hideContainer.style.display = "none";
         music.play();
     }
 });
